@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class MonsterController : MonoBehaviour
 {
+    public float hp;
+    public float debuff_blood;
+    public float debuff_weak;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +16,20 @@ public class MonsterController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Dealer()
+    {
+
+    }
+
+    public void Tanker()
+    {
+
+    }
+
+    public void Boss()
+    {
+
     }
 }
