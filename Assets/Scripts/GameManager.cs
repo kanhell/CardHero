@@ -2,15 +2,35 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManager instance;
+
+    void Awake()
     {
-        
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CheckState()
     {
-        
+
+    }
+
+    public GameObject MonsterSelect()
+    {
+        // 몬스터 선택 (몬스터는 버튼)
+    }
+
+    public void GameOver()
+    {
+
+    }
+
+    public void Victory()
+    {
+
     }
 }
